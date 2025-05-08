@@ -1,0 +1,11 @@
+C:\Users\Hasee\Desktop\多设备数据采集与监控\多设备数据采集与监控\bin\Debug\多设备数据采集与监控.exe.config
+C:\Users\Hasee\Desktop\多设备数据采集与监控\多设备数据采集与监控\bin\Debug\多设备数据采集与监控.exe
+C:\Users\Hasee\Desktop\多设备数据采集与监控\多设备数据采集与监控\bin\Debug\多设备数据采集与监控.pdb
+C:\Users\Hasee\Desktop\多设备数据采集与监控\多设备数据采集与监控\obj\Debug\多设备数据采集与监控.csproj.AssemblyReference.cache
+C:\Users\Hasee\Desktop\多设备数据采集与监控\多设备数据采集与监控\obj\Debug\多设备数据采集与监控.FormMain.resources
+C:\Users\Hasee\Desktop\多设备数据采集与监控\多设备数据采集与监控\obj\Debug\多设备数据采集与监控.Properties.Resources.resources
+C:\Users\Hasee\Desktop\多设备数据采集与监控\多设备数据采集与监控\obj\Debug\多设备数据采集与监控.csproj.GenerateResource.cache
+C:\Users\Hasee\Desktop\多设备数据采集与监控\多设备数据采集与监控\obj\Debug\多设备数据采集与监控.csproj.CoreCompileInputs.cache
+C:\Users\Hasee\Desktop\多设备数据采集与监控\多设备数据采集与监控\obj\Debug\多设备数据采集与监控.exe
+C:\Users\Hasee\Desktop\多设备数据采集与监控\多设备数据采集与监控\obj\Debug\多设备数据采集与监控.pdb
+C:\Users\Hasee\Desktop\多设备数据采集与监控\多设备数据采集与监控\obj\Debug\多设备数据采集与监控.Device_Add.resources

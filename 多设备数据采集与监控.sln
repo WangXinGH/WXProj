@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "多设备数据采集与监控", "多设备数据采集与监控\多设备数据采集与监控.csproj", "{1EF1E839-6D4D-44FC-9F4F-0E1AF76B7EB3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EF1E839-6D4D-44FC-9F4F-0E1AF76B7EB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EF1E839-6D4D-44FC-9F4F-0E1AF76B7EB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EF1E839-6D4D-44FC-9F4F-0E1AF76B7EB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EF1E839-6D4D-44FC-9F4F-0E1AF76B7EB3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CC81AEB-6639-4EBA-864D-123E505F7930}
+	EndGlobalSection
+EndGlobal
