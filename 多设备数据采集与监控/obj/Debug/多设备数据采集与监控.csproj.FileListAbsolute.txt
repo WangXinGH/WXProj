@@ -9,3 +9,6 @@ C:\Users\Hasee\Desktop\多设备数据采集与监控\多设备数据采集与�
 C:\Users\Hasee\Desktop\多设备数据采集与监控\多设备数据采集与监控\obj\Debug\多设备数据采集与监控.exe
 C:\Users\Hasee\Desktop\多设备数据采集与监控\多设备数据采集与监控\obj\Debug\多设备数据采集与监控.pdb
 C:\Users\Hasee\Desktop\多设备数据采集与监控\多设备数据采集与监控\obj\Debug\多设备数据采集与监控.Device_Add.resources
+C:\Users\Hasee\Desktop\多设备数据采集与监控\多设备数据采集与监控\bin\Debug\EasyModbus.dll
+C:\Users\Hasee\Desktop\多设备数据采集与监控\多设备数据采集与监控\bin\Debug\EasyModbus.xml
+C:\Users\Hasee\Desktop\多设备数据采集与监控\多设备数据采集与监控\obj\Debug\多设备数据采集与监控.csproj.Up2Date

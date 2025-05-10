@@ -6,16 +6,14 @@ using System.Threading.Tasks;
 
 namespace 多设备数据采集与监控.Model
 {
-    class Device
+    public class AlarmInfo
     {
-        public int DeviceId { get; set; }
-       public string Name { get; set; }
-       public string IP { get; set; }
-        public int Port { get; set; }
-        public int SlaveId { get; set; }
-     
-        public bool ConnState { get; set; } = false;
-        public bool AlarmState { get; set; } = false;
+        public int AlarmId { get; set; }
 
+        public int DeviceId { get; set; }
+        public string AlarmInfomation { get; set; }
+        public DateTime TimeStamp { get; set; }
+        public bool AlarmState { get; set; } = false;
+       
     }
 }

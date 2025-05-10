@@ -22,9 +22,18 @@ namespace 多设备数据采集与监控
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                a.add_device(this.textBox4.Text.ToString(), textBox1.Text, Convert.ToInt16(textBox2.Text),
+                Convert.ToInt16(textBox3.Text));
+                this.Close();
+            }
+            catch (Exception)
+            {
 
-            a.add_device(this.textBox4.Text.ToString(),textBox1.Text,Convert.ToInt16(textBox2.Text),
-                Convert.ToInt16(textBox3.Text), Convert.ToInt16(textBox5.Text));
+                MessageBox.Show("添加设备字符有误！");
+            }
+            
         }
         
     }
