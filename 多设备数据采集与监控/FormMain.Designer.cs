@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series23 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series24 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title8 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -201,7 +201,7 @@
             this.label21.Font = new System.Drawing.Font("宋体", 6.6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label21.Location = new System.Drawing.Point(179, 42);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(39, 12);
+            this.label21.Size = new System.Drawing.Size(38, 11);
             this.label21.TabIndex = 16;
             this.label21.Text = "ms/次";
             // 
@@ -494,42 +494,42 @@
             // 
             // chart
             // 
-            chartArea8.AxisX.IsLabelAutoFit = false;
-            chartArea8.AxisX.LabelStyle.Angle = 90;
-            chartArea8.AxisX.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.4F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea8.Name = "ChartArea1";
-            this.chart.ChartAreas.Add(chartArea8);
+            chartArea1.AxisX.IsLabelAutoFit = false;
+            chartArea1.AxisX.LabelStyle.Angle = 90;
+            chartArea1.AxisX.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.4F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea1.Name = "ChartArea1";
+            this.chart.ChartAreas.Add(chartArea1);
             this.chart.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend8.Name = "Legend1";
-            this.chart.Legends.Add(legend8);
+            legend1.Name = "Legend1";
+            this.chart.Legends.Add(legend1);
             this.chart.Location = new System.Drawing.Point(3, 3);
             this.chart.Name = "chart";
-            series22.BorderWidth = 2;
-            series22.ChartArea = "ChartArea1";
-            series22.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series22.Legend = "Legend1";
-            series22.LegendText = "X Axis";
-            series22.Name = "Series1";
-            series23.BorderWidth = 2;
-            series23.ChartArea = "ChartArea1";
-            series23.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series23.Legend = "Legend1";
-            series23.LegendText = "Y Axis";
-            series23.Name = "Series2";
-            series24.BorderWidth = 2;
-            series24.ChartArea = "ChartArea1";
-            series24.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series24.Legend = "Legend1";
-            series24.LegendText = "Z Axis";
-            series24.Name = "Series3";
-            this.chart.Series.Add(series22);
-            this.chart.Series.Add(series23);
-            this.chart.Series.Add(series24);
+            series1.BorderWidth = 2;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.LegendText = "X Axis";
+            series1.Name = "Series1";
+            series2.BorderWidth = 2;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Legend = "Legend1";
+            series2.LegendText = "Y Axis";
+            series2.Name = "Series2";
+            series3.BorderWidth = 2;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Legend = "Legend1";
+            series3.LegendText = "Z Axis";
+            series3.Name = "Series3";
+            this.chart.Series.Add(series1);
+            this.chart.Series.Add(series2);
+            this.chart.Series.Add(series3);
             this.chart.Size = new System.Drawing.Size(646, 355);
             this.chart.TabIndex = 0;
             this.chart.Text = "chart";
-            title8.Name = "轴势";
-            this.chart.Titles.Add(title8);
+            title1.Name = "轴势";
+            this.chart.Titles.Add(title1);
             // 
             // tabPage3
             // 

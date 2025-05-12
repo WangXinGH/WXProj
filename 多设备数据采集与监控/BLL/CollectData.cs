@@ -14,57 +14,65 @@ namespace 多设备数据采集与监控.BLL
 {
     class CollectData
     {
-
-
-
-
-        public List<DataInfo> StartCollectDatas(List<Device> deviceList)
+        List<DataInfo> list = new List<DataInfo>();
+        ModbusClient modbusClient;
+        public void StartCollectDatas(List<Device> deviceList)
         {
-
-            List<DataInfo> list = new List<DataInfo>();
-            List<Task> tasks = new List<Task>();
-            foreach (var device in deviceList)
+            DataInfo data = new DataInfo();
+             foreach(var device in deviceList)
             {
                 CancellationTokenSource cts = new CancellationTokenSource();
-                tasks.Add(Task.Run(() =>
+
+                Task.Run(async () =>
                 {
                     try
                     {
-                        DataInfo data = new DataInfo();
-
-                        ModbusClient modbusClient = new ModbusClient(device.IP, device.Port);
-                        data.CollectTime = DateTime.Now;
-                        data.SlaveId = device.DeviceId;
-                        data.DeviceState = true;
-                        modbusClient.Connect();
-                        int[] datas = modbusClient.ReadHoldingRegisters(0, 3);
-                        if (datas[0]>90| datas[1]>90 |datas[2]>90)
-                        {
-                            AlarmHelper alarm = new AlarmHelper();
-                            alarm.CollectAlarm(device.SlaveId, "X>90或Y>90或Z>90", DateTime.Now);
-                            alarm.Invoker();
-                        }
-                        data.DataXValue = datas[0];
-                        data.DataYValue = datas[1];
-                        data.DataZValue = datas[2];
-                        modbusClient.Disconnect();
-                        lock (this)
-                        {
-                            list.Add(data);
-                        }
-                    }
-                    catch (Exception ex)
-                    {
+                            modbusClient = new ModbusClient(device.IP, device.Port);
+                            data.CollectTime = DateTime.Now;
+                            data.SlaveId = device.DeviceId;
+                            data.DeviceState = true;
+                            modbusClient.Connect();
                         
-                        MessageBox.Show($"连接设备失败，看不到XYZ轴值，请检查IP和端口！", "错误连接提示", MessageBoxButtons.OK);
-                       
+                        while (true)
+                        {
+                            await Task.Delay(1000);
+                            int[] datas = modbusClient.ReadHoldingRegisters(0, 3);
+                            data.DataXValue = datas[0];
+                            data.DataYValue = datas[1];
+                            data.DataZValue = datas[2];
+
+                            lock (this)
+                            {
+                                list.Add(data);
+                                if (list.Count > 100)
+                                {
+                                    list.RemoveAt(0);
+                                }
+                               
+                            }
+                        }
+                      
+
                     }
-                  
-                  
-                }, cts.Token));
+                        catch (Exception)
+                        {
+
+                            MessageBox.Show($"连接设备失败，看不到XYZ轴值，请检查IP和端口！", "错误连接提示", MessageBoxButtons.OK);
+
+                        }
+                }, cts.Token);
                
             }
+        }
+
+        public List<DataInfo> GetDataAsync()
+        {
             return list;
+        }
+
+        public void CloseTCP()
+        {
+            modbusClient.Disconnect();
         }
     }
 
